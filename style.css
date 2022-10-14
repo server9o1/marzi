@@ -1,0 +1,32 @@
+.container{
+    width: 98vw;
+    height: 100vh;
+    background-image: url(1234.gif); 
+    background-position: center; 
+    background-size: cover; 
+    padding: 0 8;
+    position: relative;
+}
+.content{
+top: 50%;
+position:absolute;
+transform: translateY(-50%);
+color: black;
+}
+.launch-time{ 
+    display: flex;
+}
+.launch-time div{ 
+    flex-basis: 100px;
+}
+.launch-time div p{ 
+    font-size: 60px; 
+    margin-bottom: -15px;
+}
+.content button{
+    background: transparent;
+    border: 3px solid black;
+    outline: none;
+    padding: 9px 20px;
+    color: black;
+}
