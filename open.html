@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+</h2><marquee scroll amount="5"><h2>dear anni wait for ur link</h2></marquee>
+<h3>Your Link: </h3>
+<div class="container">
+<h1 class="timer" id="timer"></h1>
+</div>
+<button disabled class="btn" id="btn"><a href="html.html">WAIT</a></button>
+    </body>
+<script>
+var time=15
+var x = setInterval(function(){
+document.getElementById("timer").innerHTML=" "+time+" seconds";
+time = time-1
+
+if(time < 0){
+      clearInterval(x);
+document.getElementById("btn").innerHTML = "wait";
+document.getElementById("btn").style.backgroundColor="#1995ad";
+document.getElementById("btn").style.cursor="pointer"; 
+document.getElementById("btn").style.opacity="1";
+} 
+},1000);
+</script>
+</html>
